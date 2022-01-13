@@ -37,7 +37,7 @@
  
     body{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         background-color: rgb(20, 18, 18);
         padding: 0px;
@@ -67,39 +67,40 @@
         border-width:2px;
         border-style: solid;*/
     }
-    .videoplusdesc  
-        {
-        display: flex;
-        flex-wrap: wrap;
-        height: 500px;
-        width: 250px;
- 
+    
         /*border-color: blueviolet;
         border-width:2px;
         border-style: solid;*/
     }
-    @media screen and (min-width: 0px){
+    @media screen and (max-width: 750px){
         section {
             width: 100vw;
             height: 100vh;
             
         }
         #video {
-            width: 400vw;
-            height: 100vh;
+            width: 100vw;
+            height: 400vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .videoplusdesc  
+        {
+        display: flex;
+        flex-direction: column;
+       /* height: 500px;
+        width: 250px;*/
         }
     }
-    
     .about_three_squares {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        
-        height: 500px;
-        width: 750px;
-   
+        width: 375px;
+        height: 563px;
     }
+ 
     .photo_square,
     .text_square {
         display:flex;
@@ -110,15 +111,39 @@
          color: darkgoldenrod;
          
     }
-    @media screen and (min-width: 50px){
+    @media screen and (min-width: 750px){
+        section {
+            width: 100vw;
+            height: 100vh;
+            
+        }
+        #video {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: row;
+        }
+        .videoplusdesc  
+        {
+        
+        /*height: 500px;
+        width: 250px;*/
+        }
+        
+
+    }
+  
+    @media screen and (max-width: 750px){
+        
         .about_three_squares {
-            height: 75vh;
-            width: 50vw;
-         }
+        height: 75vh;
+        width: 50vw;
+        }
+
         .photo_square,
         .text_square {
-            border-width:0px;
-           /* border-style: solid;*/
+           /*  border-width:0px;
+           border-style: solid;*/
         }
     }
     header{
@@ -185,13 +210,13 @@
         <div>
 
         </div>
-        <video width="360" height="540" controls="controls" poster="video/duel.jpg">
+        <video  width="360" height="540" controls="controls" poster="video/duel.jpg">
             <source src="videos/hi_i_sky-0001.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
          </video>
-        <video width="360" height="540" controls="controls" poster="video/duel.jpg">
+        <video  width="360" height="540" controls="controls" poster="video/duel.jpg">
             <source src="videos/hi_i_sky-0002.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
          </video>
-        <video width="360" height="540" controls="controls" poster="video/duel.jpg">
+        <video  width="360" height="540" controls="controls" poster="video/duel.jpg">
             <source src="videos/hi_i_sky-0003.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
          </video>
         <video width="360" height="540" controls="controls" poster="video/duel.jpg">
