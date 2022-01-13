@@ -117,15 +117,19 @@
             height: 100vh;
             
         }
-        #video {
+        #videos {
             width: 100vw;
-            height: 100vh;
+            height: 200vh;
             display: flex;
             flex-direction: row;
+            flex-wrap: wrap;
+        }
+        video {
+            width: 80%;
         }
         .videoplusdesc  
         {
-        
+            height: 100vh;
         /*height: 500px;
         width: 250px;*/
         }
@@ -139,12 +143,27 @@
         height: 75vh;
         width: 50vw;
         }
-
+        #videos {
+            width: 100vw;
+            height: 400vh;
+            display: flex;
+            flex-direction: column;
+        }
+        video {
+            height: 80%;
+        }
+        .videoplusdesc  
+        {
+            height: 100vh;
+        /*height: 500px;
+        width: 250px;*/
+        }
         .photo_square,
         .text_square {
            /*  border-width:0px;
            border-style: solid;*/
         }
+        
     }
     header{
         position: fixed;
@@ -206,22 +225,31 @@
         
     </section>
 
-    <section id="video">
-        <div>
-
+    <section id="videos">
+        <div class="videoplusdesc">
+            <video  width="360" height="540" controls="controls" poster="video/duel.jpg">
+                <source src="videos/hi_i_sky-0001.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+             </video>
         </div>
-        <video  width="360" height="540" controls="controls" poster="video/duel.jpg">
-            <source src="videos/hi_i_sky-0001.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-         </video>
-        <video  width="360" height="540" controls="controls" poster="video/duel.jpg">
-            <source src="videos/hi_i_sky-0002.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-         </video>
-        <video  width="360" height="540" controls="controls" poster="video/duel.jpg">
-            <source src="videos/hi_i_sky-0003.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-         </video>
-        <video width="360" height="540" controls="controls" poster="video/duel.jpg">
-            <source src="videos/hi_i_sky-0004.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-         </video>
+        <div class="videoplusdesc">
+            <video  width="360" height="540" controls="controls" poster="video/duel.jpg">
+                <source src="videos/hi_i_sky-0002.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+             </video>
+        </div>
+        <div class="videoplusdesc">
+            <video  width="360" height="540" controls="controls" poster="video/duel.jpg">
+                <source src="videos/hi_i_sky-0003.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+             </video>
+        </div>
+        <div class="videoplusdesc">
+            <video width="360" height="540" controls="controls" poster="video/duel.jpg">
+                <source src="videos/hi_i_sky-0004.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+             </video>
+        </div>
+        
+        
+        
+        
     </section>
     <section id="contact">
          <div class="about_three_squares">
