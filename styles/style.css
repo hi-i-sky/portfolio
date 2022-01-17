@@ -60,6 +60,10 @@ ul {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-image: url("/images/hi_i_sky-0002.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 
 }
 
