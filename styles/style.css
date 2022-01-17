@@ -2,8 +2,8 @@
 }
 
 :root {
-    --background-color-big: rgb(34, 36, 41);
-    --background-color-small: rgb(34, 36, 41);
+    --background-color-big: rgb(11, 0, 15);
+    --background-color-small:   rgb(11, 0, 15);
 
     --text-color-big: coral;
     --text-color-small: coral;
@@ -60,7 +60,7 @@ ul {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url("/images/hi_i_sky-0002.jpg");
+   /* background-image: url("/images/hi_i_sky-0002.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -68,10 +68,10 @@ ul {
 }
 
 .main-section__background{
-    background-image: url("/images/hi_i_sky-0002.jpg");
+  /*  background-image: url("/images/hi_i_sky-0002.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center;*/
 }
 .contacts{
     width: 100%;
